@@ -1,7 +1,7 @@
 name: about_screen
 description: A new Flutter plugin project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/bynicodevelop/about_screem
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
