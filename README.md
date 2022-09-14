@@ -38,3 +38,6 @@ class HomeScreen extends StatelessWidget {
   }
 }
 ```
+## Rendering
+
+<img src="https://raw.githubusercontent.com/bynicodevelop/about_screen/main/example/assets/capture-1.png" width="320px" />
