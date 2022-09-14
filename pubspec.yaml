@@ -1,6 +1,6 @@
 name: about_screen
 description: A Flutter package to show an about screen.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/bynicodevelop/about_screem
 
 environment:
