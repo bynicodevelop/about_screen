@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:about_screen/about_screen.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 late PackageInfo packageInfo;
@@ -39,16 +40,32 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Flutter Demo Home Page'),
       ),
       body: Center(
-        child: aboutScreen(
-          packageInfo.appName,
-          applicationVersion: packageInfo.version,
-          applicationLegalese: '© 2021 Nico Develop',
-          applicationIcon: Image.asset(
-            'assets/logo.png',
-            width: 100,
-            height: 100,
-          ),
-        ),
+        child: aboutScreen(packageInfo.appName,
+            applicationVersion: packageInfo.version,
+            applicationLegalese: '© 2023 Nico Develop',
+            applicationIcon: Image.asset(
+              'assets/logo.png',
+              width: 100,
+              height: 100,
+            ),
+            socials: [
+              const AboutSocialIcon(
+                url: "https://facebook.com",
+                icon: EvaIcons.facebook,
+              ),
+              const AboutSocialIcon(
+                url: "https://linkedin.com",
+                icon: EvaIcons.linkedin,
+              ),
+              const AboutSocialIcon(
+                url: "https://github.com",
+                icon: EvaIcons.github,
+              ),
+              const AboutSocialIcon(
+                url: "https://twitter.com",
+                icon: EvaIcons.twitter,
+              ),
+            ]),
       ),
     );
   }
