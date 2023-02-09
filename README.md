@@ -19,20 +19,32 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Flutter Demo Home Page'),
       ),
       body: Center(
-        child: aboutScreen(
-          /// The application name. (Required)
-          packageInfo.appName,
-          /// The application version. (optional)
-          applicationVersion: packageInfo.version,
-          /// The application legal copyright. (optional)
-          applicationLegalese: '© 2021 Nico Develop',
-          /// The application icon. (optional)
-          applicationIcon: Image.asset(
-            'assets/logo.png',
-            width: 100,
-            height: 100,
-          ),
-        ),
+        child: aboutScreen(packageInfo.appName,
+            applicationVersion: packageInfo.version,
+            applicationLegalese: '© 2023 Nico Develop',
+            applicationIcon: Image.asset(
+              'assets/logo.png',
+              width: 100,
+              height: 100,
+            ),
+            socials: [
+              const AboutSocialIcon(
+                url: "https://facebook.com",
+                icon: EvaIcons.facebook,
+              ),
+              const AboutSocialIcon(
+                url: "https://linkedin.com",
+                icon: EvaIcons.linkedin,
+              ),
+              const AboutSocialIcon(
+                url: "https://github.com",
+                icon: EvaIcons.github,
+              ),
+              const AboutSocialIcon(
+                url: "https://twitter.com",
+                icon: EvaIcons.twitter,
+              ),
+            ]),
       ),
     );
   }
@@ -40,4 +52,4 @@ class HomeScreen extends StatelessWidget {
 ```
 ## Rendering
 
-<img src="https://raw.githubusercontent.com/bynicodevelop/about_screen/main/example/assets/capture-1.png" width="320px" />
+<img src="https://res.cloudinary.com/dadnvmbcq/image/upload/v1675965014/1675964987023_100_rf1xbd.png" width="320px" />
